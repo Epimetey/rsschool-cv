@@ -1,1 +1,1 @@
-# rsschool-cv
+https://Epimetey.github.io/rsschool-cv/
