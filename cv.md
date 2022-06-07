@@ -103,7 +103,7 @@
 
 ## Work experience
    - associate professor of the university (19 years)
-   - ontent manager (1 year)
+   - content manager (1 year)
 
 ## Education 
    - Programming  
