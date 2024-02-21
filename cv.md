@@ -1,10 +1,10 @@
 # Sergei Pustovoi
-![myPhoto](/img/myPhoto.jpg)
+![myPhoto](/img/im.jpg)
 ## Contacts
    * **Tel:** _+7 961-951-961-8_ 
-   * **Telegram** [_Epimetey1_](t/me/@epimetey1)
+   * **Telegram** [_Epimetey1_](https://t.me/epimetey1/)
    * **E-mail:** _epimetey@yandex.ru_
-   * **Discord nick in RSSchool** *@Epimetey*
+   * **Discord nick in RSSchool** [_@Epimetey_](https://discordapp.com/users/919839678352465982/)
  
 ## About me
    - **Age:** _44_
