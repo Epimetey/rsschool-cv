@@ -51,34 +51,6 @@ header {
     justify-content: space-between;
 }
 
-/* .Contacts {
-    width: 49%;
-}
-
-.About_me {
-    width: 49%;
-}
-
-.Skills {
-    width: 49%;
-}
-
-.Code_examples {
-    width: 100%;
-}
-
-.Work_experience {
-    width: 50%;
-}
-
-.Education {
-    width: 50%;
-}
-
-.Language {
-    width: 50%;
-}
-*/
 
 footer>div {
     display: flex;
