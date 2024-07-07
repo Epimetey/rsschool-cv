@@ -34,6 +34,16 @@ header {
     justify-content: space-between;
 }
 
+.top_info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my_photo{
+    margin-right: 10px;
+}
 
 .mine{
     display: flex;
@@ -41,16 +51,16 @@ header {
     justify-content: space-between;
 }
 
-.Contacts {
-    width: 50%;
+/* .Contacts {
+    width: 49%;
 }
 
 .About_me {
-    width: 50%;
+    width: 49%;
 }
 
 .Skills {
-    width: 50%;
+    width: 49%;
 }
 
 .Code_examples {
@@ -68,12 +78,12 @@ header {
 .Language {
     width: 50%;
 }
+*/
 
-
-footer {
+footer>div {
     display: flex;
-    flex-flow: row wrap;
-    /*justify-content: space-between;*/
+    /* flex-flow: row wrap; */
+    justify-content: space-between;
     background-color: black;
     color: white; 
 }
