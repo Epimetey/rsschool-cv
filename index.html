@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">                    
+        <div class="container">
             <nav class="nav">
                 <ul class="menu_nav">
                     <li class="nav_item">
@@ -49,8 +49,6 @@
         </div>
     </header>
 
-
-    
     <main>
         <div class="container">
             <div class="mine_container">
@@ -66,7 +64,7 @@
                     </div>
                 </section>
             </div>
-        
+
             <div class="mine_container">
                 <section id="About_me" class="About_me">
                     <div>
@@ -123,12 +121,12 @@
                                     </code>
                                 </pre>
                             </li>
-                            <li>                
+                            <li>
                                 <b>Python:</b>
                                 <pre>
                                     <code>
                                         def peak_height(mountain):
-                                                        
+
                                         ### Проверка длины строк. При не соответствии длины - дополняем в конце нужное число “ ”. предварительно доводим до четного числа длину строки.
                                         len_ver = len(mountain)
                                         len_hor = len(mountain[0])
@@ -139,7 +137,7 @@
                                             len_hor += 1
                                         for i in range(0,len_ver):
                                             mountain[i] = mountain[i].ljust(len_hor," ")
-                                    
+
                                         ### Создаем массив и переводим в него оцифрованные данные:"  "  = 0, "^" = 1
                                         mass = []
                                         mass2 = []
@@ -147,17 +145,17 @@
                                             mass.append([0]*len_hor)
                                         for i in range(len_ver):
                                             mass2.append([0]*len_hor)
-                                    
+
                                         for v in range(0,len_ver):
                                             for h in range(0,len_hor):
                                                 mass [v][h] = 1 if mountain[v][h] == '^' else 0
                                         height = 0                          # высота (по умолчанию 0)
-                                        
+
                                         ### Проверяем наличие 1 в массиве. 
                                         ### Если sum &lt; 5 – выдаем результат подсчета высоты - 1,  если summ = 0 выдаем - 0 
                                         ###(закоменчено. хз почему глючит проверка. ну и пофигу. без нее работает)
                                         def check(mass):
-                                            summ = 0            
+                                            summ = 0
                                             for i in range (0,len_ver):
                                                 for x in mass[i]: 
                                                     summ += x
@@ -169,7 +167,7 @@
                                         #    return 1                     ################ return 1
                                         else:
                                             height +=1
-                                    
+
                                         #len_ver_var = len_ver
                                         # Первые и последние ячейки исключаем из проверки
                                         for n in range(max(len_ver,len_hor)):
@@ -187,14 +185,14 @@
                                                 for j in range (0,len_hor):
                                                     mass [0][j] = 0
                                                     mass [-1][j] = 0
-                                    
+
                                             # Проверяем остаточную сумму
                                             summ = check(mass2)  
                                             if summ &lt; 1:
                                                 return height                  ################ return height
                                             else:
                                                 height +=1
-                                        
+
                                             # Переносим данные из mass2 в mass за одно обнуляя массив mass2
                                             for v in range (0,len_ver):
                                                 for h in range (0,len_hor):    
@@ -228,11 +226,11 @@
                         <ul>
                             <li><b>Programming</b>
                                 <ul>
-                                    <li><b>Python:</b> Literature, guides, YouTube video, not completed Stepik courses, etc.</li>                           
+                                    <li><b>Python:</b> Literature, guides, YouTube video, not completed Stepik courses, etc.</li>
                                     <li><b>JavaScript:</b> Not completed RS School courses</li>
                                     <li><b>Delphy:</b> Independent learning. Several PC applications were written</li>
                                 </ul> 
-                            </li>                       
+                            </li>
                             <li><b>Other</b>
                                 <ul>
                                     <li>Electrical engineer</li>
@@ -243,7 +241,7 @@
                             </li>
                         </ul>
                     </div>
-                </section>        
+                </section>
             </div>
             <div class="mine_container">
                 <section id="Language" class="Language">
@@ -266,9 +264,9 @@
                 </a>
             </div>
             <div>
-                <a class="footer_item"><h4>P.S.A. 2024</h4></a>  
+                <a class="footer_item"><h4>P.S.A. 2024</h4></a>
             </div>
-            <div>      
+            <div>
                 <a class="footer_item" href="https://rs.school/courses/javascript-preschool-ru">
                     <img height="50" src="assets/svg/github.webp" alt="GitHub logo">
                 </a>
