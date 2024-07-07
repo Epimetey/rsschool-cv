@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>CV Pustovoi Sergei</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">                    
+            <nav class="nav">
+                <ul class="menu_nav">
+                    <li class="nav_item">
+                        <a href="#Contacts">Contacts</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#About_me">About me</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#Skills">Skills</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#Code_examples">Code examples</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#Work_experience">Work experience</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#Education">Education</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#Language">Language</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="top_info">
+                <div class="my_photo">
+                    <img src="assets/img/im.jpg" alt="CV photo">
+                </div>
+                <div>
+                    <h1>Sergei Pustovoi</h1>
+                    <h3>Beginner front-end developer</h3>
+                </div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+
+
+    
+    <main>
+        <div class="container">
+            <div class="mine_container">
+                <section id="Contacts" class="Contacts">
+                    <div>
+                        <h2>Contacts</h2>
+                        <ul>
+                            <li><b>Tel/WA:</b> +7 961-951-961-8</li>
+                            <li><b>Telegram:</b> Epimetey1</li>
+                            <li><b>E-mail:</b> epimetey@yandex.ru</li>
+                            <li><b>Discord nick in RSSchool:</b> @Epimetey</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        
+            <div class="mine_container">
+                <section id="About_me" class="About_me">
+                    <div>
+                        <h2>About me</h2>
+                        <ul>
+                            <li><b>Age:</b> 44</li>
+                            <li><b>Sex:</b> male</li>
+                            <li><b>Profession:</b> Security</li>
+                            <li>
+                                <span><b>My goal:</b> I want to master modern programming. My goal is to implement my project.. To do this, I need knowledge of full stack and back-end programming.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>        
+            </div>
+
+            <div class="mine_container">
+                <section id="Skills" class="Skills">
+                    <div>
+                        <h2>Skills</h2>
+                        <ul>
+                            <li>
+                                <b>HTML:</b> Average
+                            </li>
+                            <li>
+                                <b>CSS:</b> Poor
+                            </li>
+                            <li>
+                                <b>Git:</b> Average
+                            </li>
+                            <li>
+                                <b>JS:</b> Poor
+                            </li> 
+                            <li>
+                                <b>Python:</b> Poor (Rank on Codewars: 6 kyu)
+                            </li>
+                            <li>
+                                <b>Delphi:</b> Average (The skill of creating applications)
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <div class="mine_container">
+                <section id="Code_examples" class="Code_examples">
+                    <div>
+                        <h2>Code examples</h2>
+                        <ul>
+                            <li>
+                                <h4>JavaScript</h4>
+                                <pre>
+                                    <code>
+                                        none
+                                    </code>
+                                </pre>
+                            </li>
+                            <li>                
+                                <b>Python:</b>
+                                <pre>
+                                    <code>
+                                        def peak_height(mountain):
+                                                        
+                                        ### Проверка длины строк. При не соответствии длины - дополняем в конце нужное число “ ”. предварительно доводим до четного числа длину строки.
+                                        len_ver = len(mountain)
+                                        len_hor = len(mountain[0])
+                                        for i in range(0,len_ver):
+                                            if len_hor &lt; len(mountain[i]):
+                                                len_hor = len(mountain[i])
+                                        if len_hor // 2 &lt; len_hor / 2:
+                                            len_hor += 1
+                                        for i in range(0,len_ver):
+                                            mountain[i] = mountain[i].ljust(len_hor," ")
+                                    
+                                        ### Создаем массив и переводим в него оцифрованные данные:"  "  = 0, "^" = 1
+                                        mass = []
+                                        mass2 = []
+                                        for i in range(len_ver):
+                                            mass.append([0]*len_hor)
+                                        for i in range(len_ver):
+                                            mass2.append([0]*len_hor)
+                                    
+                                        for v in range(0,len_ver):
+                                            for h in range(0,len_hor):
+                                                mass [v][h] = 1 if mountain[v][h] == '^' else 0
+                                        height = 0                          # высота (по умолчанию 0)
+                                        
+                                        ### Проверяем наличие 1 в массиве. 
+                                        ### Если sum &lt; 5 – выдаем результат подсчета высоты - 1,  если summ = 0 выдаем - 0 
+                                        ###(закоменчено. хз почему глючит проверка. ну и пофигу. без нее работает)
+                                        def check(mass):
+                                            summ = 0            
+                                            for i in range (0,len_ver):
+                                                for x in mass[i]: 
+                                                    summ += x
+                                            return summ                     #----------------------------
+                                        summ = check(mass)  
+                                        if summ == 0:
+                                            return height                 ################ return height
+                                        #    elif summ &lt; 1:
+                                        #    return 1                     ################ return 1
+                                        else:
+                                            height +=1
+                                    
+                                        #len_ver_var = len_ver
+                                        # Первые и последние ячейки исключаем из проверки
+                                        for n in range(max(len_ver,len_hor)):
+                                            for i in range (1,len_ver-1):
+                                                for j in range (1,len_hor-1):
+                                                    if mass [i-1][j] == 0 or mass [i][j-1] == 0 or mass [i+1][j] == 0 or mass [i][j+1] == 0:
+                                                        mass2 [i][j] = 0
+                                                    else:
+                                                        mass2 [i][j] = 1
+                                            # Обнуляем нижнюю и верхниюю строки, первые и последние ячейки (единожды)
+                                            if n == 0:
+                                                for i in range (0,len_ver):
+                                                    mass [i][0] = 0
+                                                    mass [i][-1] = 0
+                                                for j in range (0,len_hor):
+                                                    mass [0][j] = 0
+                                                    mass [-1][j] = 0
+                                    
+                                            # Проверяем остаточную сумму
+                                            summ = check(mass2)  
+                                            if summ &lt; 1:
+                                                return height                  ################ return height
+                                            else:
+                                                height +=1
+                                        
+                                            # Переносим данные из mass2 в mass за одно обнуляя массив mass2
+                                            for v in range (0,len_ver):
+                                                for h in range (0,len_hor):    
+                                                    mass [v][h] = mass2 [v][h]
+                                                    mass2 [v][h] = 0
+                                            n += 1
+                                        return height                                   ################ РЕЗУЛЬТАТ
+                                    </code>
+                                </pre>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <div class="mine_container">
+                <section id="Work_experience" class="Work_experience">
+                    <div>
+                        <h2>Work experience</h2>
+                            <ul>
+                                <li>Associate professor</li>
+                                <li>Content manager & Author of technical articles</li>
+                                <li>Security service</li>
+                            </ul>
+                    </div>
+                </section>
+            </div>
+            <div class="mine_container">
+                <section id="Education" class="Education">
+                    <div>
+                        <h2>Education</h2>
+                        <ul>
+                            <li><b>Programming</b>
+                                <ul>
+                                    <li><b>Python:</b> Literature, guides, YouTube video, not completed Stepik courses, etc.</li>                           
+                                    <li><b>JavaScript:</b> Not completed RS School courses</li>
+                                    <li><b>Delphy:</b> Independent learning. Several PC applications were written</li>
+                                </ul> 
+                            </li>                       
+                            <li><b>Other</b>
+                                <ul>
+                                    <li>Electrical engineer</li>
+                                    <li>Cand. Sc. (Agriculture)</li>
+                                    <li>Pedogog of higher education</li>
+                                    <li>Copywriter</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>        
+            </div>
+            <div class="mine_container">
+                <section id="Language" class="Language">
+                    <div>
+                        <h2>Language</h2>
+                        <ul>
+                            <li><b>English:</b> A2</li>
+                            <li><b>Russian:</b> native</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <a class="footer_item" href="https://rs.school/courses/javascript-preschool-ru">
+                    <img height="50" src="assets/svg/rss.webp" alt="RSS logo">
+                </a>
+            </div>
+            <div>
+                <a class="footer_item"><h4>P.S.A. 2024</h4></a>  
+            </div>
+            <div>      
+                <a class="footer_item" href="https://rs.school/courses/javascript-preschool-ru">
+                    <img height="50" src="assets/svg/github.webp" alt="GitHub logo">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

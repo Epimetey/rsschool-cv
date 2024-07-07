@@ -1,0 +1,62 @@
+li {
+    list-style-type: none; 
+    display: block; 
+
+   }
+
+html {
+    scroll-behavior: smooth;
+  }
+
+nav {
+    right: 10px;
+    display: inline-block;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    line-height: 35px;
+}
+
+li a {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color: white;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.top_info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my_photo{
+    margin-right: 10px;
+}
+
+.mine{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+footer>div {
+    display: flex;
+    /* flex-flow: row wrap; */
+    justify-content: space-between;
+    background-color: black;
+    color: white; 
+}
+
